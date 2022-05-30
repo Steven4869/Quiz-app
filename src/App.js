@@ -1,10 +1,13 @@
+import React, {useState } from 'react'
 import './App.css';
-// import styles from './mystyle.module.css'
+import { Quiz } from './Components/Quiz';
+import { Start } from './Components/Start';
 function App() {
+  const [start, setStart]=useState(false)
   return (
-   <div>
-     hello world 
-   </div>
+    <div className="quiz">
+      {start?<Quiz />:<Start props={setStart} />}
+    </div>
   );
 }
 
