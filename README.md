@@ -6,4 +6,5 @@ An Quiz App made with the help of React-JS
 
 # How to get started 
 > npm install 
+
 > npm start 
