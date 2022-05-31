@@ -1,21 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-const Button = styled.button`
-    border: 1px solid #616A94;
-    border-radius: 50px;
-    padding: 15px 30px;
-    text-decoration: none;
-    color: #616A94;
-    background-color: #161A31;
-    transition: 0.3s;
-    font-size: 1em;
-    cursor: pointer;
-    outline: none;
-    &:hover {
-        color: white;
-        background-color: #616A94;
-    }
-`;
+import { Button } from '@mantine/core'
 
 const Intro = styled.div`
 margin-top: 8em;
@@ -25,8 +10,9 @@ export const Start = ({props}) => {
     const StartQuiz = () =>props(true)
   return (
     <Intro>
-        <h1>Let's start the Quiz</h1>
-        <Button onClick={StartQuiz}>Start</Button>
+        <h1>Welcome to Quizzer</h1>
+        <h2>An Quiz App consisting of 10 questions</h2><h2>based on the General Knowledge</h2>
+        <Button onClick={StartQuiz} variant='gradient' size='lg' radius={15} mt={35}>Click to begin</Button>
     </Intro>
   )
 }

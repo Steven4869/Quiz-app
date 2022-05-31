@@ -7,27 +7,27 @@ import { GameOver } from './GameOver';
 const QuizWindow = styled.div`
     text-align: center;
     font-size: clamp(20px, 2.5vw, 24px);
-    margin-top: 10vh;
+    margin-top: 15vh;
 `;
 
 const Options = styled.div`
     display: flex;
     flex-direction: column;
-    width: 70%;
-    margin: 2em auto;
+    width: 30%;
+    margin: 3em auto;
     @media screen and (min-width: 1180px) {
-        width: 50%;
+        width: 30%;
     }
 `;
 
 const Option = styled.button`
     display: block;
-    border: 1px solid #616A94;
+    border: 2px solid wheat;
     border-radius: 15px;
     padding: 15px 30px;
     text-decoration: none;
-    color: #616A94;
-    background-color: #161A31;
+    color: black;
+    background-color: white;
     transition: 0.3s;
     font-size: 1em;
     outline: none;
@@ -38,7 +38,7 @@ const Option = styled.button`
     @media screen and (min-width: 1180px) {
         &:hover {
             color: white;
-            background-color: #616A94;
+            background-color: black;
         }
     }
 `;
